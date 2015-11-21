@@ -21,3 +21,42 @@
   position: absolute!important;
   left: 50%; top: 50%;
 }
+
+.form-container {
+  max-width: $default-max-width;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.save-button {
+  color: #1793C1;
+  margin: 10px 0 0 0;
+  padding: 5px 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: rgba(0,0,0,0);
+  border: solid 5px #1793C1;
+  float: right;
+}
+
+.save-button:focus {
+  outline: none;
+}
+
+.save-button:hover {
+  color: $base-ui-color;
+  background: $blocks-control-bg-color;
+  border: solid 5px $accent-color;
+}
+
+.alert {
+  border: solid 1px #EAEAEA;
+  border-radius: 5px;
+  padding: 12px;
+  max-width: 250px;
+  text-align: center;
+  font-family: sans-serif;
+}

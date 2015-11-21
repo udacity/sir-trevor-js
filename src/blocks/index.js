@@ -8,4 +8,7 @@ module.exports = {
   List: require('./list'),
   Tweet: require('./tweet'),
   Video: require('./video'),
+  Markdown: require('./markdown'),
+  Table: require('./table'),
+  Title: require('./title')
 };

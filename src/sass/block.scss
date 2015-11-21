@@ -4,7 +4,7 @@
 }
 
 .st-block__inner {
-  padding: 1.875em 1.875em 2.8em;
+  padding: 1.0em 1.0em 1.8em;
   border: $border-size $border-style #fff;
   position: relative;
 }
@@ -32,7 +32,7 @@
 
 .st-icon--add:after {
   text-align: center;
-  font-size: 1.875em;
+  font-size: 1.4em;
   padding: 0.3em 0;
   line-height: 0.9;
   border-radius: 0.2em;
@@ -77,6 +77,24 @@
   font-weight: 700;
 }
 
+.st-markdown {
+  width: 100%;
+  min-height: 4.0em;
+  overflow: auto;
+}
+
+.expanding-textarea {
+  padding-bottom: 40px;
+}
+
+.st-markdown__display {
+ max-height: 200px;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: $border-size dashed #d4d4d4;
+ overflow: auto;
+}
+
 ul.st-text-block {
   margin-left: 1.875em;
 }
@@ -89,7 +107,7 @@ ul.st-text-block {
 .st-block__inputs {
   padding: 1.6em 0 1em;
   border-radius: 0.2em;
-  background: $blocks-control-bg-color;
+  background: #f0f0f0;
   border-top: $border-size $border-style transparent;
 }
 
@@ -210,4 +228,38 @@ ul.st-text-block {
 
 .st-msg--error {
   color: $error-color;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  caption {
+    width: 25%;
+    min-width: 25%;
+    max-width: 100%;
+    background: #f3f3f3;
+    text-align:left;
+  }
+
+  td, th {
+    min-width: 30px;
+    border: 1px solid black !important;
+  }
+  td {
+    border: 1px solid #ddd !important;
+    min-height: 2.0em;
+  }
+  th {
+    border: 1px solid black !important;
+  }
+  thead tr {
+    border: 1px solid black !important;
+    min-height: 100px;
+  }
+  tbody tr {
+    border: 1px solid #ddd !important;
+  }
 }
