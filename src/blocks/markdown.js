@@ -4,7 +4,6 @@ var Block = require('../block');
 var _ = require('../lodash');
 var marked = require('marked');
 var hljs = require('highlight.js');
-var $ = require('jquery');
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -16,7 +15,7 @@ marked.setOptions({
   smartLists: true,
   smartypants: false,
   highlight: function(code) {
-    return require('highlight.js').highlightAuto(code).value;
+    return hljs.highlightAuto(code).value;
   }
 });
 
