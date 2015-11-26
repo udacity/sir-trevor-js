@@ -79,6 +79,7 @@ module.exports = {
           title: "link",
           iconName: "link",
           cmd: "linkPrompt",
+          keyCode: 75,
           text : "link",
         },
         {

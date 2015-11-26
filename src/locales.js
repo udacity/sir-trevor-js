@@ -53,6 +53,9 @@ var Locales = {
       },
       heading: {
         'title': "Heading"
+      },
+      markdown: {
+        'title': "MD"
       }
     }
   }
