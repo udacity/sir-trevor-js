@@ -16832,7 +16832,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  title: function() { return i18n.t('blocks:image:title'); },
 
 	  droppable: true,
-	  uploadable: true,
+	  pastable: true,
 
 	  icon_name: 'image',
 
@@ -16847,6 +16847,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    this.$inputs.find('input').on('change', (function(ev) {
 	      this.onDrop(ev.currentTarget);
 	    }).bind(this));
+	  },
+	  
+	  onContentPasted: function(event){
+	    this.handleDropPaste(event.target.value);
 	  },
 
 	  onDrop: function(transferData){
